@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """
 This module contains functions that do simple math operations.
+It is used to demonstrate test-driven development in Python.
+All functions handle integers and floats with proper type checking.
 """
-
-
-
 def add_integer(a, b=98):
     """Adds two integers and returns the result."""
     if type(a) not in [int, float]:
