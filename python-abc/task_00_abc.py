@@ -6,8 +6,8 @@ class Animal(ABC):
 	   pass
 class Dog(Animal):
 	def sound(self):
-		print("Bark")
+		return("Bark")
 class Cat(Animal):
 	def sound(self):
-		print("Meow")
+		return("Meow")
 
