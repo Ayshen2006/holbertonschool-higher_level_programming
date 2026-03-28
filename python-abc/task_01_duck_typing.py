@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
 from abc import ABC, abstractmethod
 import math
-class Shape(ABC):
+class shape(ABC):
     @abstractmethod
     def area(self):
         pass
     @abstractmethod
-        def perimeter(self):
+    def perimeter(self):
                 pass
-class Circle(Shape):
+class circle(shape):
     def __init__(self,radius):
         self.radius=radius
     def area(self):
                 return pi*self.radius**2
-        def perimeter(self):
+    def perimeter(self):
                 return 2*pi*self.radius
-class Rectangle(Shape):
+class rectangle(shape):
     def __init__(self,width,height):
         self.width=width
         self.height=height
