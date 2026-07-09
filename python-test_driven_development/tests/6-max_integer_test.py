@@ -18,7 +18,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_at_beginning(self):
         self.assertEqual(max_integer([9, 3, 2, 1]), 9)
 
-    def test_max_at_end(self):
+    def max_at_the_end(self):
         self.assertEqual(max_integer([1, 2, 3, 9]), 9)
 
     def test_max_in_middle(self):
