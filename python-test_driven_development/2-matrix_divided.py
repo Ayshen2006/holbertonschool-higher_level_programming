@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """Module containing matrix_divided function."""
+
+
 def matrix_divided(matrix, div):
     """Divide all elements of a matrix by div.
 
     Returns a new matrix with all values rounded to 2 decimals.
-    """
+    """   
     if not isinstance(matrix, list) or len(matrix) == 0:
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats"
