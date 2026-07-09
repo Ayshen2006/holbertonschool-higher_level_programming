@@ -1,0 +1,50 @@
+Test for text_indentation function.
+
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+Basic sentence.
+
+>>> text_indentation("Hello. How are you?")
+Hello.
+
+How are you?
+
+Colon handling.
+
+>>> text_indentation("Name: John")
+Name:
+
+John
+
+Multiple separators.
+
+>>> text_indentation("A. B? C:")
+A.
+
+B?
+
+C:
+
+
+Leading spaces after punctuation.
+
+>>> text_indentation("Hello.   World.")
+Hello.
+
+World.
+
+No punctuation.
+
+>>> text_indentation("Hello world")
+Hello world
+
+Empty string.
+
+>>> text_indentation("")
+
+Type error.
+
+>>> text_indentation(98)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
