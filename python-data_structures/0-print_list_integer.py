@@ -1,8 +1,9 @@
+
 #!/usr/bin/python3
+"""Print integers from a list."""
+
+
 def print_list_integer(my_list=[]):
-    for i in my_list:
-        print("{:d}".format(i))
-#!/usr/bin/python3
-def print_list_integer(my_list=[]):
-    for i in my_list:
-        print("{:d}".format(i))
+    """Print each integer in the list on a separate line."""
+    for num in my_list:
+        print("{:d}".format(num))
