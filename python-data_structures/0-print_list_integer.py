@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Print integers from a list."""
 
