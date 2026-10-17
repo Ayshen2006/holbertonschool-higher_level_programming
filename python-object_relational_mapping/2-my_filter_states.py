@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""List states matching a name provided as an argument."""
+"""List states matching a name provided by the user."""
 
 import MySQLdb
 import sys
@@ -13,12 +13,15 @@ if __name__ == "__main__":
         passwd=sys.argv[2],
         db=sys.argv[3]
     )
+
     cur = db.cursor()
-    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(
+    query = "SELECT * FROM states WHERE BINARY name = '{}' ORDER BY id".format(
         sys.argv[4]
     )
     cur.execute(query)
-    for row in cur.fetchall():
-        print(row)
+
+    for state in cur.fetchall():
+        print(state)
+
     cur.close()
     db.close()
