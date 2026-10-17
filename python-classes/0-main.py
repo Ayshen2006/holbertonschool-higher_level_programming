@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Test the empty Square class."""
+
 Square = __import__('0-square').Square
 
 my_square = Square()
