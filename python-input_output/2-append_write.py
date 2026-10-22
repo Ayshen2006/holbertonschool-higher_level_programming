@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-"""
-Dosyanın sonuna ekleme yapma modülü.
-"""
+"""Append text to a file."""
 
 
 def append_write(filename="", text=""):
-    """UTF8 formatında dosyanın sonuna metin ekler ve eklenen karakter sayısını döner."""
+    """Append text to a file and return the number of characters added."""
     with open(filename, "a", encoding="utf-8") as f:
         return f.write(text)
