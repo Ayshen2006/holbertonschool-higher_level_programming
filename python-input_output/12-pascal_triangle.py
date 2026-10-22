@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""
-Pascal Üçgeni modülü.
-"""
+"""Pascal triangle module."""
 
 
 def pascal_triangle(n):
-    """n boyutunda Pascal Üçgeni temsil eden liste listesi döner."""
+    """Return a list of lists representing Pascal's triangle."""
     if n <= 0:
         return []
 
@@ -14,11 +12,10 @@ def pascal_triangle(n):
     for i in range(1, n):
         row = [1]
         prev_row = triangle[i - 1]
-        
-        # İç kısımdaki sayıları hesapla (üstteki iki sayının toplamı)
+
         for j in range(1, i):
             row.append(prev_row[j - 1] + prev_row[j])
-            
+
         row.append(1)
         triangle.append(row)
 
